@@ -1,0 +1,15 @@
+{
+  "name": "wampus",
+  "version": "1.0.0",
+  "description": "Ai for wampus world",
+  "main": "main.js",
+  "scripts": {
+    "test": "testing",
+    "start": "electron ."
+  },
+  "author": "Omid Davar",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^5.0.4"
+  }
+}

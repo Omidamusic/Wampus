@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ایتدا فایل های مربوط به دیزاین صفحه را لود میکنیم که فایل استایلز توسط خودم نوشته شده است-->
+    <link rel="stylesheet" href="bootstrap.css"/>
+    <link rel="stylesheet" href="Styles.css"/>
+    <link rel="stylesheet" href="bulma.css"/>
+    <title>Wampus World</title>
+  </head>
+  <body >
+    <div class="parallax"></div>
+        <!-- این قسمت مربوط به دریافت اطلاعات است که با استفاده از بوت استرپ صفحه را تقسیم بندی کردیم-->
+    <div class="row" style="margin-bottom:20px">
+    <div class="col-md-3"></div>
+        <div class="col-md-6" style="text-align:center">
+            <h1 class="Usefont Header">Wampus World</h1>
+            <p class="UseFont " style="margin-bottom: 100px;">You Can Run The Code Which Will Play Wampus And Trying To Win.<br> first enter the size of gamepad and enter pits and gold and wampus locations </p>
+            <!-- در این قسمت چند تکست باکس میسازیم که محل ها را از کاربر بگیریم-->
+            <br>
+            <input id="sizeofgamepad" class="form-control" type="text" placeholder="Enter Size Of GamePad(result:n*n square)" />
+            <br>
+            <input id="pitlocations" class="form-control" type="text" placeholder="Enter Pit Locations (, in between)" />
+            <br>
+            <input id="wampuslocation" class="form-control" type="text" placeholder="Enter wampus Location" />
+            <br>
+            <input id="goldlocation" class="form-control" type="text" placeholder="Enter Gold Location" />
+            <br>
+            <!-- با کلیک شدن بر روی این دکمه متود اینیشیالایز گیم پد که در فایل initializing.js است اجرا میشود-->
+            <button class="btn btn-primary btn-lg" onclick="initializegamepad()">Initialize GamePad</button>
+            <br>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    <!-- این قسمت مربوط به صفحه ی بازی است که با استفاده از بوت استرپ صفحه را تقسیم بندی کردیم-->
+    <div class="row Options" >
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6 Options">
+            <table id="GamePad">
+            <!-- داخل این جدول با کد جی اس اینیتشیالایزینگ پر میشود-->
+            </table>
+                <!-- با کلیک شدن بر روی این دکمه متود استارت گیم که در فایل Wampus.js است اجرا میشود-->
+    <br>
+    <p id="action" ></p>
+    <br>
+    <p id="status"></p>
+    <br>
+<button class="btn btn-primary btn-lg" onclick="startgame()">Start Game</button>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+
+
+        
+
+    <!-- در این قسمت تمامی فایل های جس اس را لود میکنیم-->
+  <script src="bootstrap.js"></script>
+ <script src="Wampus.js"></script>
+ <script src="Initializing.js"></script>
+ <script src="Types.js"></script>
+ <script src="GlobalVariables.js"></script>
+  </body>
+</html>
